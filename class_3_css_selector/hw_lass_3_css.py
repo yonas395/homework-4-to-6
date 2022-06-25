@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 
-driver = webdriver.Chrome(executable_path="C:\ProgramData\Microsoft\Windows\Start Menu\Programs\JetBrains\chromedriver.exe")
+driver = webdriver.Chrome(executable_path="C:\Windows\chromedriver.exe")
 driver.get("https://www.amazon.com")
 #  Find the most optimal locators for Create Account (Registration) page elements
 

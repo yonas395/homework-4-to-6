@@ -18,8 +18,6 @@ Feature: test canceled orders
     Then verify cart has 1 item(s)
 
 
-  Scenario: user can see all  sections on header of best seller page
-    Given  open amazon best sellers page
-    Then verify there are 5 links
+
 
 

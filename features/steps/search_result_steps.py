@@ -1,5 +1,4 @@
 
-
 from behave import given, when, then
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -15,7 +14,18 @@ BB_SEARCH = (By.ID, 'twotabsearchtextbox')
 @when('input {search_word}')
 def input_word(context, search_word):
     context.driver.find_element(*BB_SEARCH).send_keys('basketball', Keys.ENTER)
-    sleep(1)
+    sleep(2)
+
+
+
+@when('enter {search_word}')
+def enter_word(context, search_word):
+    context.driver.find_element(*BB_SEARCH).send_keys('coffee', Keys.ENTER)
+
+
+@when('Click Amazon {search_word}')
+def Click_Amazon_Orders_link(context, search_word):
+    context.app.hw7_amz_order_click.Click_Amazon_Orders_link(search_word)
 
 
 @then('click on the {search_word}')
@@ -29,3 +39,4 @@ def click_on_add(context, search_word):
     sleep(1)
 #    context.driver.find_element(*B_SEL).click()
 #    sleep(1)
+

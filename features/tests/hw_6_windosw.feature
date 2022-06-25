@@ -22,6 +22,9 @@ Feature: handling multiple windows
     Then User can close new window
     Then switch back to original window
 
+   # git remote add origin https://github.com/yonas395/homework-4-to-6.git
+   # git branch -M main
+   # git push -u origin main
 
 
 
